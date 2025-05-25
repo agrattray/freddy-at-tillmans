@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Freddy's Barbershop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+    }
+    header {
+      background: linear-gradient(to right, maroon, darkred);
+      padding: 4rem 2rem;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1601197989469-3c252a1d116d');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      position: relative;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1, header p {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: gold;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #f0f0f0;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: gold;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+    }
+    .services li {
+      background: #222;
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta button {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      background: gold;
+      color: maroon;
+      border: none;
+      border-radius: 8px;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+    .cta p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .contact {
+      background: #111;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 3rem;
+    }
+    .contact p {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+    footer {
+      background: #000;
+      text-align: center;
+      padding: 1rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Freddy's Barbershop</h1>
+    <p>Sharp Cuts • Classic Style • Neighborhood Vibes</p>
+  </header>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Men’s Haircut - $25</li>
+      <li>Beard Trim - $15</li>
+      <li>Fade & Line-Up - $30</li>
+      <li>Hot Towel Shave - $20</li>
+      <li>Kids Cut - $20</li>
+    </ul>
+  </section>
+
+  <div class="cta">
+    <button disabled>Book Now</button>
+    <p>Online booking coming soon</p>
+  </div>
+
+  <section class="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1624222259896-e58053b8dbf2" alt="Barber Cut 1">
+      <img src="https://images.unsplash.com/photo-1624225240249-e2fe7c81d1a3" alt="Barber Cut 2">
+      <img src="https://images.unsplash.com/photo-1619983081513-1de3c7271a2e" alt="Barber Tools">
+      <img src="https://images.unsplash.com/photo-1618761719008-4289d6e71686" alt="Beard Trim">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact & Location</h2>
+    <p>📍 123 Main Street, Your City, ST</p>
+    <p>📞 (123) 456-7890</p>
+    <p>🕒 Mon–Sat, 9AM–6PM</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Freddy's Barbershop. All rights reserved.
+  </footer>
+</body>
+</html>
